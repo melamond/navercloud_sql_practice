@@ -58,7 +58,7 @@ UPDATE user_tbl SET user_address = '강원' WHERE user_num = 1;
 
 -- 삭제는 특정컬럼만 떼서 삭제할일이 없으므로 SELECT와는 달리 * 등을 쓰지 않습니다.
 -- 박종현이 DB에서 삭제되는 상황, safety 모드를 우회하거나 cli에서 해주세요.
-DELETE FROM user_tbl WHERE user_name = '박종현';
+DELETE FROM user_tbl WHERE user_num > 7;
 
 -- 만약 WHERE없이 삭제시 truncate와 비슷하게 작동합니다.
 DELETE FROM user_tbl;
